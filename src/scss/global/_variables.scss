@@ -5,13 +5,13 @@ $folder-fonts:  '../fonts/';       // путь к шрифтам
 
 
 //PADDING
-// $p-w-min: 15;
+$p-w-min: 15;
 // $p-bp-1:  15;
 // $p-bp-2:  15;
 // $p-bp-3:  15;
 $p-w-max: 15;
 
-// $padding-width-min: $p-w-min + px;
+$padding-width-min: $p-w-min + px;
 // $padding-bp-1:      $p-bp-1 + px;
 // $padding-bp-2:      $p-bp-2 + px;
 // $padding-bp-3:      $p-bp-3 + px;
@@ -25,8 +25,8 @@ $w-bp-3: 420;
 $w-min: 300;
 
 
-$width-max: $$w-max + px;
-// $width-bp-1: $w-bp-1 + px;
+$width-max: $w-max + px;
+$width-bp-1: $w-bp-1 + px;
 $width-bp-2: $w-bp-2 + px;
 $width-bp-3: $w-bp-3 + px;
 $width-min: $w-min + px;
