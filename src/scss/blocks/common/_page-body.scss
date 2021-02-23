@@ -1,0 +1,15 @@
+.page-body {
+  display: grid;
+  grid-template-rows: (auto 1fr auto);
+
+  min-width: $width-min;
+
+  font-family: $font-family-base;
+  font-weight: $font-weight-base;
+  font-style: normal;
+  color: $font-color-base;
+
+  background-color: $body-bg-color;
+
+  overflow-x: hidden;
+}
