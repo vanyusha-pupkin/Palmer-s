@@ -1,0 +1,36 @@
+.page-footer {}
+
+.page-footer__top {
+  padding-top: 95px;
+  padding-bottom: 40px;
+
+  background-color: $color-yellow;
+}
+
+.page-footer__bottom {
+  padding-top: 83px;
+  padding-bottom: 54px;
+
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+
+  background-color: $footer-bg-color;
+}
+
+.page-footer__copyright {
+  display: inline-block;
+
+  @media (max-width: $bp-4+px) {
+    display: block;
+  }
+}
+
+.page-footer__link {
+  transition: all 0.3s ease;
+  &:hover {
+    color: $color-black;
+  }
+}
