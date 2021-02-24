@@ -1,0 +1,45 @@
+.site-search {}
+
+.site-search__wrapper {
+  display: flex;
+  align-items: center;
+  width: 308px;
+
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+
+  @media (max-width: $bp-4+px) {
+    width: 100%;
+  }
+}
+
+.site-search__input {
+  flex: 1 0 auto;
+  padding: 9px 10px;
+
+  background-color: transparent;
+  outline: none;
+
+  @media (max-width: $bp-4+px) {
+
+  }
+}
+
+.site-search__button {
+  flex: 0 0 54px;
+  height: 42px;
+
+  border: none;
+  background-color: transparent;
+
+  svg {
+    fill: #707270;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    svg {
+      fill: $color-yellow;
+    }
+  }
+}

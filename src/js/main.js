@@ -1,7 +1,7 @@
 'use strict';
 
 //открытие закрытие выпадающего меню
-@@include('modules/_main-menu.js');
+@@include('modules/_main-nav.js');
 
 //открытие закрытие выпадающего меню
 @@include('modules/_hamburger.js');
