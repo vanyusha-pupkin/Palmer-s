@@ -1,1 +1,28 @@
-.button {}
+.button {
+  display: inline-block;
+  padding: 20px 40px;
+
+  font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+  border-radius: 5px;
+  background-color: $color-green;
+  transition: all 0.3s ease;
+
+  &--slider {
+    padding: 12px 28px;
+
+    background-color: $color-yellow;
+
+    &:hover {
+      color: $color-yellow;
+
+      background-color: $color-white;
+    }
+  }
+}

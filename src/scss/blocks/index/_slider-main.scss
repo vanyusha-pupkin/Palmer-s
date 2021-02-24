@@ -1,0 +1,142 @@
+.slider-main {
+  position: relative;
+}
+
+.slider-main__list {}
+
+.slider-main__item {
+  display: none;
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--1 {
+    background-image: url(../img/home/slide1.jpg);
+    background-color: #E0C6A8;
+  }
+
+  &--2 {
+    background-image: url(../img/home/slide2.jpg);
+    background-color: #a4632a;
+  }
+
+  &--3 {
+    background-image: url(../img/home/slide3.jpg);
+    background-color: #B8AF9D;
+  }
+
+  &.is-active {
+    display: block;
+  }
+}
+
+.slider-main__wrapper {
+  padding-top: 127px;
+  padding-bottom: 132px;
+
+  font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+  @media (max-width: $bp-1+px) {
+    padding-top: 33px;
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: $bp-4+px) {
+    padding-bottom: 80px;
+  }
+}
+
+.slider-main__title {
+  display: inline-block;
+  padding-bottom: 37px;
+  margin-bottom: 20px;
+
+  font-weight: 800;
+  font-size: 95px;
+  line-height: 105%;
+  letter-spacing: -0.05em;
+  color: $color-white;
+
+  border-bottom: 1px solid $color-white;
+
+  @media (max-width: $bp-1+px) {
+    padding-bottom: 0;
+
+    font-size: 55px;
+
+    border-bottom: none;
+  }
+
+  @media (max-width: $bp-4+px) {
+    margin-bottom: 30px;
+    font-size: 35px;
+  }
+}
+
+.slider-main__slogan {
+  margin-bottom: 37px;
+
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 61px;
+  letter-spacing: -0.02em;
+  color: $color-white;
+
+  @media (max-width: $bp-1+px) {
+    font-size: 25px;
+  }
+
+  @media (max-width: $bp-4+px) {
+    display: none;
+  }
+}
+
+.slider-main__button {}
+
+.slider-main__controls {
+  position: absolute;
+
+  bottom: 57px;
+  right: 0;
+  left: 0;
+
+  @media (max-width: $bp-1+px) {
+    bottom: 35px;
+  }
+}
+
+.controls {}
+
+.controls__wrapper {}
+
+.controls__list {
+  display: flex;
+}
+
+.controls__item {
+  margin-right: 6px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.controls__toggle {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+
+  background-color: #FAECD8;
+  border: none;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #382015;
+  }
+
+   &.is-active {
+    background-color: #382015;
+    cursor: default;
+   }
+}

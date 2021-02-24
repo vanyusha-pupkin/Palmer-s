@@ -3,7 +3,7 @@
   @media (max-width: $bp-3+px) {
     position: relative;
 
-    min-height: 49px;
+    min-height: 52px;
 
     border: 1px solid $color-yellow;
     background-color: $color-white;
@@ -21,7 +21,7 @@
 
     &.open {
       position: absolute;
-
+      z-index: 2;
       width: 100%;
 
       background-color: $color-white;
