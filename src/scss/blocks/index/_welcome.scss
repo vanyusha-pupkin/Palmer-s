@@ -1,0 +1,150 @@
+.welcome {
+  padding: 100px 0;
+}
+
+.welcome__wrapper {
+  display: flex;
+  margin: 0 -15px;
+
+  @media (max-width: $bp-1+px) {
+    margin: 0 -10px;
+  }
+
+  @media (max-width: $bp-3+px) {
+    display: block;
+    margin: 0;
+  }
+}
+
+.welcome__main-item {
+  flex: 0 0 33.333%;
+  padding: 0 15px;
+
+  font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+  @media (max-width: $bp-1+px) {
+    padding: 0 10px;
+  }
+
+  @media (max-width: $bp-3+px) {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 102px;
+  }
+}
+
+.welcome__image {
+  width: 240px;
+  height: 240px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  img {
+    height: 100%;
+  }
+
+  @media (max-width: $bp-2+px) {
+    width: 100%;
+    height: auto;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.welcome__greeting {
+  margin-bottom: 26px;
+  padding: 0 25px;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  color: $color-yellow;
+
+  @media (max-width: $bp-1+px) {
+    padding: 0;
+  }
+}
+
+.welcome__text {
+  padding: 0 25px;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  color: #808080;
+
+  @media (max-width: $bp-1+px) {
+    padding: 0;
+  }
+}
+
+.welcome__list {
+  display: flex;
+  flex: 0 0 66.66%;
+
+  @media (max-width: $bp-3+px) {
+    display: block;
+    width: 100%;
+    margin-bottom: -102px;
+  }
+}
+
+.welcome__item {
+  flex: 0 0 50%;
+  padding: 0 15px;
+
+  @media (max-width: $bp-1+px) {
+    padding: 0 10px;
+  }
+
+  @media (max-width: $bp-3+px) {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 102px;
+  }
+}
+
+.welcome-item {}
+
+.welcome-item__image {
+  width: 240px;
+  height: 240px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  img {
+    height: 100%;
+  }
+
+  @media (max-width: $bp-2+px) {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.welcome-item__title {
+  margin-bottom: 28px;
+}
+
+.welcome-item__social {
+  margin-bottom: 25px;
+
+  text-align: center;
+}
+
+.welcome-item__text {}

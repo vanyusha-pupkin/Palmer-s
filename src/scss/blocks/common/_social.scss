@@ -1,6 +1,8 @@
 .social {
 
-  --footer {}
+  &--footer {}
+
+  &--in-block {}
 }
 
 .social__list {
@@ -30,6 +32,10 @@
     @media (max-width: $bp-2+px) {
       margin-right: 32px;
     }
+  }
+
+  .social--in-block & {
+    margin:0 5px;
   }
 }
 
@@ -72,6 +78,24 @@
       height: 47px;
     }
   }
+
+  .social--in-block & {
+    width: 18px;
+    height: 18px;
+
+    background-color: transparent;
+
+    .social__icon {
+      fill: $color-yellow;
+    }
+
+    &:hover {
+      .social__icon {
+        fill: $color-black;
+      }
+    }
+  }
+
 }
 
 .social__icon {
@@ -85,5 +109,9 @@
       width: 25px;
       height: 27px;
     }
+  }
+
+  .social--in-block & {
+    height: 18px;
   }
 }
