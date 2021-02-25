@@ -12,5 +12,8 @@
 //переключение акордиона
 @@include('modules/_accordion.js');
 
+//img-to-bg
+@@include('modules/_img-to-bg.js');
+
 //поддержка формата webp в css
 @@include('vendor/_modernizr-webp.js');
