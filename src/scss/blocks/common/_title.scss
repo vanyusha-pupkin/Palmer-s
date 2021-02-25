@@ -1,7 +1,12 @@
 .title {
+  font-weight: 900;
   font-size: 36px;
-  line-height: 43px;
+  line-height: calc(43/36);
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: $color-white;
+
+  @media (max-width: $bp-2+px) {
+    font-size: 26px;
+  }
 }
