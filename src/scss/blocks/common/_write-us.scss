@@ -1,0 +1,39 @@
+.write-us {
+  padding-top: 95px;
+  padding-bottom: 105px;
+}
+
+.write-us__title {
+  margin-bottom: 60px;
+
+  color: $color-black;
+}
+
+.write-us__form {
+  width: 570px;
+  margin: 0 auto;
+
+  @media (max-width: $bp-2+px) {
+    width: 364px;
+  }
+
+  @media (max-width: $bp-3+px) {
+    width: 420px;
+  }
+
+  @media (max-width: $bp-4+px) {
+    width: 270px;
+  }
+}
+
+.write-us__item {
+  margin-bottom: 22px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--button {
+    text-align: right;
+  }
+}

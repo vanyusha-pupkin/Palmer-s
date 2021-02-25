@@ -5,9 +5,25 @@
 
 .form__legend {}
 
+.form__input,
+.form__textarea {
+  width: 100%;
+  padding: 20px 22px;
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #848484;
+
+  border: 1px solid #dddddd;
+  background-color: #eeeeee;
+}
+
 .form__input {}
 
-.form__textarea {}
+.form__textarea {
+  height: 280px;
+}
 
 .form__radio {}
 
