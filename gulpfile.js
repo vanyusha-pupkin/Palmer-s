@@ -9,6 +9,7 @@ const
   sassGlob          = require('gulp-sass-glob'),                //объединяет сразу несколько scss файлов по маске
   gcmq              = require('gulp-group-css-media-queries'),  //группирует медиа запросы в css файлах
   mqpacker          = require('css-mqpacker'),                  //группирует медиа запросы в css файлах
+  groupMedia          = require('gulp-group-css-media-queries'),                  //группирует медиа запросы в css файлах
   csso              = require('gulp-csso'),                     //минифицирует css файлы
   postcss           = require('gulp-postcss'),                  //нужен для работы autoprefixer
   autoprefixer      = require('autoprefixer'),                  //расставляет автопрефиксы в css файлах
@@ -116,10 +117,11 @@ function style(){
         .pipe(sassGlob())
         .pipe(sass.sync({outputStyle: 'expanded'}))
         .pipe(postcss([
-          autoprefixer(),
-          mqpacker({sort: true}),
-          mqpacker()
+          autoprefixer()
+          // mqpacker({sort: true})
+          // mqpacker()
         ]))
+        .pipe(groupMedia())
         .pipe(dest(path.build.css))
         .pipe(csso())
         .pipe(rename({suffix: '.min'}))

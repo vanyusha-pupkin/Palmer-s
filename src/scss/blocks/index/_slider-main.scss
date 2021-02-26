@@ -11,17 +11,17 @@
   background-position: center;
 
   &--1 {
-    background-image: url(../img/home/slide1.jpg);
+    @include background-image-webp("../img/home/slide1", "jpg");
     background-color: #E0C6A8;
   }
 
   &--2 {
-    background-image: url(../img/home/slide2.jpg);
+    @include background-image-webp("../img/home/slide2", "jpg");
     background-color: #a4632a;
   }
 
   &--3 {
-    background-image: url(../img/home/slide3.jpg);
+    @include background-image-webp("../img/home/slide3", "jpg");
     background-color: #B8AF9D;
   }
 

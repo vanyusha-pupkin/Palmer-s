@@ -1,7 +1,7 @@
 # Проект «Palmer-s»
 
-
 ---
+## Ссылка на сайт - [https://vanyusha-pupkin.github.io/Palmer-s/](https://vanyusha-pupkin.github.io/Palmer-s/)
 
 ## Как использовать
 

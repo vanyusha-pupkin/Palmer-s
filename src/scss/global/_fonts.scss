@@ -2,5 +2,12 @@
 //------------------------OpenSans-------------------------
 
 // font
-// @include font-face('','', '', '', 400, normal);
+ @include font-face('Open Sans','OpenSans-Light', 'Open Sans Light', 'OpenSans-Light', 300, normal);
+ @include font-face('Open Sans','OpenSans-Regular', 'Open Sans', 'OpenSans-Regular', 400, normal);
+ @include font-face('Open Sans','OpenSans-Bold', 'Open Sans Bold', 'OpenSans-Bold', 700, normal);
+ @include font-face('Open Sans','OpenSans-ExtraBold', 'Open Sans ExtraBold', 'OpenSans-ExtraBold', 800, normal);
 
+ @include font-face('Lato','Lato-Light', 'Lato Light', 'Lato-Light', 300, normal);
+ @include font-face('Lato','Lato-Regular', 'Lato', 'Lato-Regular', 400, normal);
+ @include font-face('Lato','Lato-Black', 'Lato Black', 'Lato-Black', 700, normal);
+ @include font-face('Lato','Lato-Black', 'Lato Black', 'Lato-Black', 900, normal);

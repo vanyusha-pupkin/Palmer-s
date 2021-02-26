@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+    <!-------------------- head -------------------->
+
+@@include('html/_head.html', {
+  'title': 'Palmer\'s - About Us'
+})
+
+  <body class="page-body">
+
+    <!----------------- svg-sprite ----------------->
+    <div class="visually-hidden">
+      @@include('img/svg-sprite/sprite.svg')
+    </div>
+
+    <!------------------- header ------------------->
+
+@@include('html/_header.html', {
+
+  'link-logo-index': 'href="index.html"',
+
+  'active-home': '',
+  'active-about-us': 'main-nav__item--active',
+  'active-menu': '',
+  'active-contacts': '',
+  'active-blog': '',
+
+  'link-index': 'href="index.html"',
+  'link-about-us': '',
+  'link-menu': 'href="menu.html"',
+  'link-contacts': 'href="contacts.html"',
+  'link-blog': 'href="blog.html"',
+})
+
+    <!------------------- content ------------------>
+
+    <main class="page-main">
+
+      <h1 class="visually-hidden">Palmer's - About Us</h1>
+
+      <section class="about-us">
+        <div class="container">
+          <h2 class="about-us__title  title">a few words about us</h2>
+          <div class="about-us__body">
+            <div class="about-us__image">
+              <img src="img/about/page2_pic1.jpg" alt="">
+            </div>  <!-- about-us__image -->
+            <div class="about-us__contant">
+              <h3 class="about-us__subtitle  subtitle">ultricies nunc ornare at Donec sit amet suscipit  neque, egestas placerat urna, Nunc ut est nunc. Aliquam erat </h3>
+              <p class="about-us__text  text">Mauris vitae dolor convallis, fringilla. ligula vestibulum, sollicitudin est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sodales, tellus a fermentum euismod, justo nibh tellus est, pulvinar non consectetur in, gravida sit amet nisl. Sed fermentum, ante nec ullamcorper tincidunt, mauris felis varius nibh, nec pretium odio turpis sed sapien. Quisque tincidunt mattis ante, in pulvinar felis elementum ac. Donec at magna erat. Cras orci augue, finibus ut aliquet sit amet, congue vehicula turpis. Maecenas at turpis non dolor imperdiet venenatis. Morbi eget lacus sed arcu.</p>
+              <a class="about-us__button  button" href="#">read more</a>
+            </div>  <!-- about-us__contant -->
+          </div>  <!-- about-us__body -->
+        </div>  <!-- container -->
+      </section>
+
+
+
+    </main>
+
+
+    <!------------------- footer ------------------->
+@@include('html/_footer.html', {'': ''})
+
+    <!---------------- modal-windows --------------->
+
+
+
+    <!------------- script-connection -------------->
+    <script src="js/main.min.js"></script>
+
+  </body>
+</html>

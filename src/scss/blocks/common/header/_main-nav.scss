@@ -53,6 +53,8 @@
 
   &--active a {
     color: $color-yellow;
+
+    cursor: default;
   }
 
   @media (max-width: $bp-1+px) {

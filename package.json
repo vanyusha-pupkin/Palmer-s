@@ -7,7 +7,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://vanyusha-pupkin.github.io/Palmer-s/"
   },
   "scripts": {
     "start": "gulp watchFiles --dev",
