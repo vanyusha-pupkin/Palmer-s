@@ -1,0 +1,89 @@
+.daily-dishes {
+   padding-top: 97px;
+   padding-bottom: 95px;
+
+   background-color: $color-green;
+}
+
+.daily-dishes__title {
+  margin-bottom: 56px;
+
+  color: $color-white;
+}
+
+.daily-dishes__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -15px;
+  margin-bottom: -40px;
+
+  @media (max-width: $bp-3+px) {
+    display: block;
+    margin: 0;
+    margin-bottom: -40px;
+  }
+}
+
+.daily-dishes__item {
+  flex: 0 0 50%;
+  padding: 0 15px;
+  margin-bottom: 40px;
+
+  @media (max-width: $bp-3+px) {
+    width: auto;
+    padding: 0;
+  }
+}
+
+.item-daily-dishes {
+  display: flex;
+
+  @media (max-width: $bp-2+px) {
+    display: block;
+  }
+}
+
+.item-daily-dishes__image {
+  flex: 0 0 270px;
+  margin-right: 30px;
+
+  @media (max-width: $bp-2+px) {
+    width: auto;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $bp-3+px) {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.item-daily-dishes__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-daily-dishes__title {
+  margin-bottom: 10px;
+
+  color: $color-white;
+}
+
+.item-daily-dishes__text {
+  margin-bottom: 8px;
+
+  color: $color-white;
+}
+
+.item-daily-dishes__price {
+  margin-top: auto;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #FF9200;
+}
