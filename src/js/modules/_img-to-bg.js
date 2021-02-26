@@ -19,6 +19,7 @@
 
 // imgToBG();
 
+console.log("+++");
 
 // для webp
 function imgToBbWebp(){
@@ -28,7 +29,7 @@ function imgToBbWebp(){
     if(imgToBG[i].querySelector('source')){
       imgToBG[i].style.backgroundImage = 'url('+imgToBG[i].querySelector('source').getAttribute('srcset')+')';
     }
-
+    console.log("---");
   }
 }
 
@@ -48,7 +49,8 @@ function imgToBb(){
 Modernizr.on('webp', function (result) {
   if (result) {
     // если браузер поддерживает webp
-    imgToBbWebp()
+    imgToBbWebp();
+    console.log("webp");
   }
   else {
     // если браузер не поддерживает webp

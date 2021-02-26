@@ -37,10 +37,10 @@ input[type="radio"].visually-hidden {
 
 
 .img-to-bg {
+  position: relative;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
 
   img {
     width: 0;

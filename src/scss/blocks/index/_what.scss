@@ -14,11 +14,12 @@
 
   width: 100%;
   height: 100%;
-
-  background-color: #8B8a89;
+  background-position: 50% 41%;
+  background-size: auto;
+  background-color: #9B9B9B;
 
   @media (max-width: $bp-4+px) {
-
+    background-image: none !important;
   }
 }
 
