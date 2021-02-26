@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+    <!-------------------- head -------------------->
+
+@@include('html/_head.html', {
+  'title': 'Palmer\'s - Menu'
+})
+
+  <body class="page-body">
+
+    <!----------------- svg-sprite ----------------->
+    <div class="visually-hidden">
+      @@include('img/svg-sprite/sprite.svg')
+    </div>
+
+    <!------------------- header ------------------->
+
+@@include('html/_header.html', {
+
+  'link-logo-index': 'href="index.html"',
+
+  'active-home': '',
+  'active-about-us': '',
+  'active-menu': 'main-nav__item--active',
+  'active-contacts': '',
+  'active-blog': '',
+
+  'link-index': 'href="index.html"',
+  'link-about-us': 'href="about-us.html"',
+  'link-menu': '',
+  'link-contacts': 'href="contacts.html"',
+  'link-blog': 'href="blog.html"',
+})
+
+    <!------------------- content ------------------>
+
+    <main class="page-main">
+
+      <h1 class="visually-hidden">Palmer's - Menu</h1>
+
+      <section class="our-menu">
+        <div class="container">
+          <h2 class="our-menu__title title">our menu</h2>
+          <ul class="our-menu__list">
+
+            <li class="our-menu__item  item-our-menu">
+              <a href="img/menu/page3_big_pic1.jpg" class="item-our-menu__image">
+                <picture>
+                  <source type="image/webp" srcset="img/menu/page3_pic1.webp">
+                  <img src="img/menu/page3_pic1.jpg" width="370" height="302" alt="">
+                </picture>
+              </a>
+              <div class="item-our-menu__content">
+                <h3 class="item-our-menu__title subtitle">Cras congue lectus ex, quis </h3>
+                <p class="item-our-menu__text  text">Sed metus odio, blandit sit amet sodales tristiq ue sem. Mauris vitae dolor convallis, fringilla.</p>
+                <p class="item-our-menu__price">$ 20,15</p>
+              </div>
+            </li>
+
+            <li class="our-menu__item  item-our-menu">
+              <a href="img/menu/page3_big_pic2.jpg" class="item-our-menu__image">
+                <picture>
+                  <source type="image/webp" srcset="img/menu/page3_pic2.webp">
+                  <img src="img/menu/page3_pic2.jpg" width="370" height="302" alt="">
+                </picture>
+              </a>
+              <div class="item-our-menu__content">
+                <h3 class="item-our-menu__title subtitle">Sed pulvinar malesuada conse</h3>
+                <p class="item-our-menu__text  text">Donec sodales, tellus a fermentum euismod, justo nibh viverra mauris, eu maximus odio.</p>
+                <p class="item-our-menu__price">$ 25,30</p>
+              </div>
+            </li>
+
+            <li class="our-menu__item  item-our-menu">
+              <a href="img/menu/page3_big_pic3.jpg" class="item-our-menu__image">
+                <picture>
+                  <source type="image/webp" srcset="img/menu/page3_pic3.webp">
+                  <img src="img/menu/page3_pic3.jpg" width="370" height="302" alt="">
+                </picture>
+              </a>
+              <div class="item-our-menu__content">
+                <h3 class="item-our-menu__title subtitle">pulvinar malesuada consequat</h3>
+                <p class="item-our-menu__text  text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                <p class="item-our-menu__price">$ 18,15</p>
+              </div>
+            </li>
+
+            <li class="our-menu__item  item-our-menu">
+              <a href="img/menu/page3_big_pic4.jpg" class="item-our-menu__image">
+                <picture>
+                  <source type="image/webp" srcset="img/menu/page3_pic4.webp">
+                  <img src="img/menu/page3_pic4.jpg" width="370" height="302" alt="">
+                </picture>
+              </a>
+              <div class="item-our-menu__content">
+                <h3 class="item-our-menu__title subtitle">Pellentesque habitant morbi </h3>
+                <p class="item-our-menu__text  text">Suspendisse lacinia lectus vel luctus ultrices. Sed metus odio, blandit sit amet ante nec, sodales.</p>
+                <p class="item-our-menu__price">$ 30,20</p>
+              </div>
+            </li>
+
+            <li class="our-menu__item  item-our-menu">
+              <a href="img/menu/page3_big_pic5.jpg" class="item-our-menu__image">
+                <picture>
+                  <source type="image/webp" srcset="img/menu/page3_pic5.webp">
+                  <img src="img/menu/page3_pic5.jpg" width="370" height="302" alt="">
+                </picture>
+              </a>
+              <div class="item-our-menu__content">
+                <h3 class="item-our-menu__title subtitle">morbi tristique senectus et </h3>
+                <p class="item-our-menu__text  text">Duis ultrices elementum quam, ut ultrices libero interdum vel. In tincidunt mi sem, eget laoreet.</p>
+                <p class="item-our-menu__price">$ 26,19</p>
+              </div>
+            </li>
+
+            <li class="our-menu__item  item-our-menu">
+              <a href="img/menu/page3_big_pic6.jpg" class="item-our-menu__image">
+                <picture>
+                  <source type="image/webp" srcset="img/menu/page3_pic6.webp">
+                  <img src="img/menu/page3_pic6.jpg" width="370" height="302" alt="">
+                </picture>
+              </a>
+              <div class="item-our-menu__content">
+                <h3 class="item-our-menu__title subtitle">senectus et netus et malesua</h3>
+                <p class="item-our-menu__text  text">Malesuada libero quam, sit amet molestie turpis volutpat scelerisque. Duis ultrices elementum.</p>
+                <p class="item-our-menu__price">$ 20,12</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+
+    <!------------------- footer ------------------->
+@@include('html/_footer.html', {'': ''})
+
+    <!---------------- modal-windows --------------->
+
+
+
+    <!------------- script-connection -------------->
+    <script src="js/main.min.js"></script>
+
+  </body>
+</html>
