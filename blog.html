@@ -8,7 +8,7 @@
     <!-- <meta name="author" content="RHM"> -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Palmer's - About Us</title>
+    <title>Palmer's - Blog</title>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/style.min.css">
   </head>
@@ -65,8 +65,8 @@
                     <li class="main-nav__item">
                       <a href="index.html">Home</a>
                     </li>
-                    <li class="main-nav__item main-nav__item--active">
-                      <a>About us</a>
+                    <li class="main-nav__item">
+                      <a href="about-us.html">About us</a>
                     </li>
                     <li class="main-nav__item">
                       <a href="menu.html">Menu</a>
@@ -74,8 +74,8 @@
                     <li class="main-nav__item">
                       <a href="contacts.html">Contacts</a>
                     </li>
-                    <li class="main-nav__item">
-                      <a href="blog.html">Blog</a>
+                    <li class="main-nav__item main-nav__item--active">
+                      <a>Blog</a>
                     </li>
                   </ul>
                 </nav>
@@ -125,141 +125,75 @@
       <!-- </div> -->
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Palmer's - About Us</h1>
-      <section class="about-us">
+      <h1 class="visually-hidden">Palmer's - Blog</h1>
+      <section class="blog">
         <div class="container">
-          <h2 class="about-us__title title">a few words about us</h2>
-          <div class="about-us__body">
-            <div class="about-us__image">
-              <picture>
-                <source type="image/webp" srcset="img/about/page2_pic1.webp">
-                <img src="img/about/page2_pic1.jpg" width="370" height="260" alt="">
-              </picture>
-            </div>  
-            <div class="about-us__contant">
-              <h3 class="about-us__subtitle subtitle">ultricies nunc ornare at Donec sit amet suscipit  neque, egestas placerat urna, Nunc ut est nunc. Aliquam erat </h3>
-              <p class="about-us__text text">Mauris vitae dolor convallis, fringilla. ligula vestibulum, sollicitudin est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sodales, tellus a fermentum euismod, justo nibh tellus est, pulvinar non consectetur in, gravida sit amet nisl. Sed fermentum, ante nec ullamcorper tincidunt, mauris felis varius nibh, nec pretium odio turpis sed sapien. Quisque tincidunt mattis ante, in pulvinar felis elementum ac. Donec at magna erat. Cras orci augue, finibus ut aliquet sit amet, congue vehicula turpis. Maecenas at turpis non dolor imperdiet venenatis. Morbi eget lacus sed arcu.</p>
-              <a class="about-us__button button" href="#">read more</a>
-            </div>  
-          </div>  
-        </div>  
-      </section>
-      <section class="advantages">
-        <div class="advantages__bg img-to-bg">
-          <picture>
-            <source type="image/webp" srcset="img/bg.webp">
-            <img src="img/bg.jpg" alt="">
-          </picture>
-        </div>
-        <div class="container">
-          <h2 class="advantages__title title">our advantages</h2>
-          <ol class="advantages__list">
-            <li class="advantages__item item-advantages">
-              <div class="item-advantages__number">1.</div>
-              <div class="item-advantages__content">
-                <h3 class="item-advantages__title subtitle">Cras congue lectus</h3>
-                <p class="item-advantages__text text">Suspendisse lacinia lectus vel luctus ultrices. Sed metus odio, blandit sit ique sem. Mauris vitae dolor convallis, fringilla ligula vestibulum, sollicitudin est. Pellentesque habitant morbi tristique senectus.</p>
-              </div>
+          <h2 class="blog__title title">blog</h2>
+          <ul class="blog__list">
+            <li class="blog__item">
+              <article class="post">
+                <div class="post__header">
+                  <time class="post__date" datetime="201-04-18">April 18, 2014</time>
+                  <p class="post__category">Category: <span>Posuere</span></p>
+                  <city class="post__author">Written by: <span>Admin</span></city>
+                  <p class="post__hits">Hits: <span>3</span></p>
+                </div>
+                <div class="post__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/blog/page5_pic1.webp">
+                    <img src="img/blog/page5_pic1.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="post__contant">
+                  <h3 class="post__title subtitle">ultricies nunc ornare at Donec sit amet suscipi.</h3>
+                  <p class="post__text text">Mauris vitae dolor convallis, fringilla. ligula vestibulum, sollicitudin est. Pellentes que habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sodales, tellus a fermentum euismod, justo nibh tellus est, pulvinar non consectetur in, gravida sit amet nisl. Sed fermentum, ante nec ullamcorper tincidunt, mauris felis varius nibh, nec pretium odio turpis sed sapien. Quisque tincidunt mattis ante, in pulvinar felis elementum ac. Donec at magna erat. Cras orci augue, finibus ut aliquet sit amet, congue vehicula turpis. Maecenas at turpis non dolor imperdiet venenatis. Morbi eget lacus sed arcu.</p>
+                  <a class="post__more button" href="#">read more</a>
+                </div>
+              </article>
             </li>
-            <li class="advantages__item item-advantages">
-              <div class="item-advantages__number">2.</div>
-              <div class="item-advantages__content">
-                <h3 class="item-advantages__title subtitle">Pellentesque habitant</h3>
-                <p class="item-advantages__text text">Donec sodales, tellus a fermentum euismod, justo nibh viverra mauris, eu maximus odio elit a sapien. Duis eu fermentum quam. Nunc vitae justo nec arcu euismod tristique et vitae eros. Cras congue.</p>
-              </div>
+            <li class="blog__item">
+              <article class="post">
+                <div class="post__header">
+                  <time class="post__date" datetime="201-04-18">April 18, 2014</time>
+                  <p class="post__category">Category: <span>Posuere</span></p>
+                  <city class="post__author">Written by: <span>Admin</span></city>
+                  <p class="post__hits">Hits: <span>3</span></p>
+                </div>
+                <div class="post__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/blog/page5_pic2.webp">
+                    <img src="img/blog/page5_pic2.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="post__contant">
+                  <h3 class="post__title subtitle">nibh quis mi pulvinar, ac fermentum ex.</h3>
+                  <p class="post__text text">Maximus suscipit sit amet nec arcu. Praesent velit urna, aliquet rhoncus feugiat eu, posuere sed magna. Sed sit amet tincidunt odio. Pellentesque at neque sagittis, commodo metus id, egestas nisl. Quisque dapibus dignissim quam eget mattis. Etiam mollis, mi quis congue posuere, est felis efficitur nunc, ultrices faucibus nisl nunc sit amet dui. Etiam sit amet metus convallis, ullamcorper purus quis, rhoncus dolor. Fusce ac commodo dui. Sed congue tortor at nisl malesuada ornare. Etiam porta magna sed nulla porta scelerisque non in lectus. Nulla sit amet nisl rutrum, maximus arcu et, euismod velit. Suspendisse potenti.</p>
+                  <a class="post__more button" href="#">read more</a>
+                </div>
+              </article>
             </li>
-            <li class="advantages__item item-advantages">
-              <div class="item-advantages__number">3.</div>
-              <div class="item-advantages__content">
-                <h3 class="item-advantages__title subtitle">Morbi tristique senec</h3>
-                <p class="item-advantages__text text">Donec sodales, tellus a fermentum euismod, justo nibh viverra mauris, eu maximus odio elit a sapien. Duis eu fermentum quam. Nunc vitae justo nec arcu euismod tristique et vitae eros. Cras congue.</p>
-              </div>
-            </li>
-          </ol>
-        </div>
-      </section>
-      <section class="cooks">
-        <div class="container">
-          <h2 class="cooks__title title">Our Cooks</h2>
-          <ul class="cooks__list">
-            <li class="cooks__item item-cooks">
-              <div class="item-cooks__image">
-                <picture>
-                  <source type="image/webp" srcset="img/about/page2_pic2.webp">
-                  <img src="img/about/page2_pic2.jpg" width="270" height="198" alt="">
-                </picture>
-              </div>
-              <p class="item-cooks__name">Eva Adamson</p>
-              <p class="item-cooks__text text">Mauris vitae dolor convallis, fringilla ligula vestibulum, sollicitudin est.</p>
-            </li>
-            <li class="cooks__item item-cooks">
-              <div class="item-cooks__image">
-                <picture>
-                  <source type="image/webp" srcset="img/about/page2_pic3.webp">
-                  <img src="img/about/page2_pic3.jpg" width="270" height="198" alt="">
-                </picture>
-              </div>
-              <p class="item-cooks__name">David Austin</p>
-              <p class="item-cooks__text text">Mauris vitae dolor convallis, fringilla ligula vestibulum, sollicitudin est.</p>
-            </li>
-            <li class="cooks__item item-cooks">
-              <div class="item-cooks__image">
-                <picture>
-                  <source type="image/webp" srcset="img/about/page2_pic4.webp">
-                  <img src="img/about/page2_pic4.jpg" width="270" height="198" alt="">
-                </picture>
-              </div>
-              <p class="item-cooks__name">Natalie Barnes</p>
-              <p class="item-cooks__text text">Mauris vitae dolor convallis, fringilla ligula vestibulum, sollicitudin est.</p>
-            </li>
-            <li class="cooks__item item-cooks">
-              <div class="item-cooks__image">
-                <picture>
-                  <source type="image/webp" srcset="img/about/page2_pic5.webp">
-                  <img src="img/about/page2_pic5.jpg" width="270" height="198" alt="">
-                </picture>
-              </div>
-              <p class="item-cooks__name">Thomas Bishop</p>
-              <p class="item-cooks__text text">Mauris vitae dolor convallis, fringilla ligula vestibulum, sollicitudin est.</p>
+            <li class="blog__item">
+              <article class="post">
+                <div class="post__header">
+                  <time class="post__date" datetime="201-04-18">April 18, 2014</time>
+                  <p class="post__category">Category: <span>Posuere</span></p>
+                  <city class="post__author">Written by: <span>Admin</span></city>
+                  <p class="post__hits">Hits: <span>3</span></p>
+                </div>
+                <div class="post__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/blog/page5_pic3.webp">
+                    <img src="img/blog/page5_pic3.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="post__contant">
+                  <h3 class="post__title subtitle">Morbi viverra nibh quis mi pulvinar, ac ferm.</h3>
+                  <p class="post__text text">Donec sodales, tellus a fermentum euismod, justo nibh tellus est, pulvinar non consectetur in, gravida sit amet nisl. Sed fermentum, ante nec ullamcorper tincidunt, mauris felis varius nibh, nec pretium odio turpis sed sapien. Quisque tincidunt mattis ante, in pulvinar felis elementum ac. Donec at magna erat. Cras orci augue, finibus ut aliquet sit amet, congue vehicula turpis. Maecenas at turpis non dolor imperdiet dapibus dignissim quam eget mattis. Etiam mollis, mi quis congue posuere, est felis efficitur nunc, ultrices faucibus nisl nunc sit amet dui. Etiam sit amet metus convallis, ullamcorper purus quis, rhoncus dolor.</p>
+                  <a class="post__more button" href="#">read more</a>
+                </div>
+              </article>
             </li>
           </ul>
-        </div>
-      </section>
-      <section class="recipes">
-        <div class="container">
-          <h2 class="recipes__title title">latest recipes</h2>
-          <div class="recipes__body">
-            <div class="recipes__column">
-              <ul class="recipes__list">
-                <li class="recipes__item"><a class="recipes__link" href="#">Fratuitous octopus niacin, sodium</a></li>
-                <li class="recipes__item"><a class="recipes__link" href="#">Quote meon an estimate et non interruptus</a></li>
-                <li class="recipes__item"><a class="recipes__link" href="#">Sic tempus fugit esperanto hiccup estrogen</a></li>
-                <li class="recipes__item"><a class="recipes__link" href="#">Glorious baklava ex librus hup hey</a></li>
-                <li class="recipes__item"><a class="recipes__link" href="#">Non sequitur condominium facile</a></li>
-                <li class="recipes__item"><a class="recipes__link" href="#">Epsum factorial non deposit quid pro</a></li>
-              </ul>
-            </div>
-            <div class="recipes__column">
-              <ul class="recipes__list">
-                <li class="recipes__item"><a class="recipes__link" href="#">Quote meon an estimate et non interruptus</a></li>
-                <li class="recipes__item"><a class="recipes__link" href="#">Sic tempus fugit esperanto hiccup estrogen</a></li>
-                <li class="recipes__item"><a class="recipes__link" href="#">Glorious baklava ex librus hup hey ad</a></li>
-                <li class="recipes__item"><a class="recipes__link" href="#">Non sequitur condominium facile et</a></li>
-                <li class="recipes__item"><a class="recipes__link" href="#">Epsum factorial non deposit quid pro quo</a></li>
-                <li class="recipes__item"><a class="recipes__link" href="#">Marquee selectus non provisio</a></li>
-              </ul>
-            </div>
-            <div class="recipes__column">
-              <ul class="recipes__list">
-                <li class="recipes__item"><a class="recipes__link" href="#">Marquee selectus non provisio</a></li>
-                <li class="recipes__item"><a class="recipes__link" href="#">Incongruous feline nolo contendre</a></li>
-                <li class="recipes__item"><a class="recipes__link" href="#">Gratuitous octopus niacin, sodium</a></li>
-                <li class="recipes__item"><a class="recipes__link" href="#">Quote meon an estimate et non interruptus</a></li>
-                <li class="recipes__item"><a class="recipes__link" href="#">Sic tempus fugit esperanto hiccup estrogen</a></li>
-                <li class="recipes__item"><a class="recipes__link" href="#">Glorious baklava ex librus hup hey ad</a></li>
-              </ul>
-            </div>
-          </div>
         </div>
       </section>
     </main>
