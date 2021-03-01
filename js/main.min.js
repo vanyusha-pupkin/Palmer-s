@@ -604,54 +604,6 @@ hamburger.addEventListener('click', function() {
 })
 ;
 
-//переключение слайдов
-
-// let sliderControl_1 = document.querySelector('.controls__toggle--1');
-// let sliderControl_2 = document.querySelector('.controls__toggle--2');
-// let sliderControl_3 = document.querySelector('.controls__toggle--3');
-
-// let sliderItem_1 = document.querySelector('.slider-main__item--1');
-// let sliderItem_2 = document.querySelector('.slider-main__item--2');
-// let sliderItem_3 = document.querySelector('.slider-main__item--3');
-
-
-// sliderControl_1.addEventListener('click', function(evt) {
-//   evt.preventDefault();
-//   sliderItem_1.classList.add('is-active');
-//   sliderItem_2.classList.remove('is-active');
-//   sliderItem_3.classList.remove('is-active');
-
-//   sliderControl_1.classList.add('is-active');
-//   sliderControl_2.classList.remove('is-active');
-//   sliderControl_3.classList.remove('is-active');
-// })
-
-// sliderControl_2.addEventListener('click', function(evt) {
-//   evt.preventDefault();
-//   sliderItem_1.classList.remove('is-active');
-//   sliderItem_2.classList.add('is-active');
-//   sliderItem_3.classList.remove('is-active');
-
-//   sliderControl_1.classList.remove('is-active');
-//   sliderControl_2.classList.add('is-active');
-//   sliderControl_3.classList.remove('is-active');
-// })
-
-// sliderControl_3.addEventListener('click', function(evt) {
-//   evt.preventDefault();
-//   sliderItem_1.classList.remove('is-active');
-//   sliderItem_2.classList.remove('is-active');
-//   sliderItem_3.classList.add('is-active');
-
-//   sliderControl_1.classList.remove('is-active');
-//   sliderControl_2.classList.remove('is-active');
-//   sliderControl_3.classList.add('is-active');
-// })
-;
-
-//переключение акордиона
-;
-
 //img-to-bg
 
 // как должен быть написан блок
@@ -714,4 +666,99 @@ Modernizr.on('webp', function (result) {
 });
 ;
 
+//анимация блоков при скроллинге
+//получаем все элементы с классом _anim-items
+const animItems = document.querySelectorAll('._anim-items');
 
+if (animItems.length > 0) {
+
+	window.addEventListener('scroll', animOnScroll);
+
+	function animOnScroll(argument) {
+		for (var i = 0; i < animItems.length; i++) {
+			const animItem = animItems[i];
+			const animItemHeight = animItem.offsetHeight;
+			const animItemOffset = offset(animItem).top;
+			const animStart = 4;
+
+			let animItemPoint = window.innerHeight - animItemHeight / animStart;
+
+			if (animItemHeight > window.innerHeight) {
+				animItemPoint = window.innerHeight - window.innerHeight / animStart;
+			}
+
+			//добавляем класс _active элименту с классом _anim-items при появлении 1/4 от его размера
+			if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+				animItem.classList.add('_active');
+			} else {
+        //удалем класс _active если у блока есть класс _anim-again, что бы блок анатомировался  снова при прокрутке вверх
+				if (animItem.classList.contains('_anim-again')) {
+					animItem.classList.remove('_active');
+				}
+			}
+		}
+	}
+
+	//функция вычисляет на сколько обьект ниже верха страницы
+	function offset(el) {
+		const rect = el.getBoundingClientRect(),
+			scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+			scrollTop = window.pageXOffset || document.documentElement.scrollTop;
+		return { top: rect.top + scrollTop, left: rect.left + scrollTop}
+	}
+
+	//запускаем функцию animOnScroll при загрузки страницы с задержкой 0,3секунды
+	setTimeout(() => {
+		animOnScroll();
+	}, 300);
+}
+;
+
+
+//переключение слайдов
+// 
+// let sliderControl_1 = document.querySelector('.controls__toggle--1');
+// let sliderControl_2 = document.querySelector('.controls__toggle--2');
+// let sliderControl_3 = document.querySelector('.controls__toggle--3');
+
+// let sliderItem_1 = document.querySelector('.slider-main__item--1');
+// let sliderItem_2 = document.querySelector('.slider-main__item--2');
+// let sliderItem_3 = document.querySelector('.slider-main__item--3');
+
+
+// sliderControl_1.addEventListener('click', function(evt) {
+//   evt.preventDefault();
+//   sliderItem_1.classList.add('is-active');
+//   sliderItem_2.classList.remove('is-active');
+//   sliderItem_3.classList.remove('is-active');
+
+//   sliderControl_1.classList.add('is-active');
+//   sliderControl_2.classList.remove('is-active');
+//   sliderControl_3.classList.remove('is-active');
+// })
+
+// sliderControl_2.addEventListener('click', function(evt) {
+//   evt.preventDefault();
+//   sliderItem_1.classList.remove('is-active');
+//   sliderItem_2.classList.add('is-active');
+//   sliderItem_3.classList.remove('is-active');
+
+//   sliderControl_1.classList.remove('is-active');
+//   sliderControl_2.classList.add('is-active');
+//   sliderControl_3.classList.remove('is-active');
+// })
+
+// sliderControl_3.addEventListener('click', function(evt) {
+//   evt.preventDefault();
+//   sliderItem_1.classList.remove('is-active');
+//   sliderItem_2.classList.remove('is-active');
+//   sliderItem_3.classList.add('is-active');
+
+//   sliderControl_1.classList.remove('is-active');
+//   sliderControl_2.classList.remove('is-active');
+//   sliderControl_3.classList.add('is-active');
+// })
+;
+
+//переключение акордиона
+// ;
